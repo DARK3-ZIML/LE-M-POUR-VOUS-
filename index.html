@@ -73,3 +73,104 @@
     </div>
   </div>
 </section>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarifs - MARION</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080610;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      padding: 25px 10px;
+      background: #100c1b;
+    }
+    nav a {
+      color: #c4b5fd;
+      margin: 10px;
+      text-decoration: none;
+    }
+    h1 { margin-top: 60px; }
+    .prix {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px 15px;
+    }
+    .carte {
+      background: #171025;
+      border: 1px solid #8b5cf6;
+      border-radius: 15px;
+      padding: 30px;
+      width: 200px;
+    }
+    .montant {
+      color: #c4b5fd;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    button {
+      background: #8b5cf6;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Les tarifs MARION</h1>
+  <p>Choisis la formule qui te convient.</p>
+
+  <div class="prix">
+    <div class="carte">
+      <h2>Starter</h2>
+      <div class="montant">10 €</div>
+      <p>Offre de base</p>
+      <button onclick="choisir('Starter')">Choisir</button>
+    </div>
+
+    <div class="carte">
+      <h2>Premium</h2>
+      <div class="montant">50 €</div>
+      <p>Offre intermédiaire</p>
+      <button onclick="choisir('Premium')">Choisir</button>
+    </div>
+
+    <div class="carte">
+      <h2>Ultimate</h2>
+      <div class="montant">200 €</div>
+      <p>Offre complète</p>
+      <button onclick="choisir('Ultimate')">Choisir</button>
+    </div>
+  </div>
+
+  <script>
+    function choisir(offre) {
+      alert("Tu as choisi l'offre " + offre +
+            ". Contacte-nous pour continuer.");
+    }
+  </script>
+</body>
+</html>
+
+<div class="titre-marion">
+  MARION
+  <span>À VOUS</span>
+</div>
